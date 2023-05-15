@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBA</title>
+    <link rel="stylesheet" href="static/css/tailwind.min.css" referrerpolicy="no-referrer">
+</head>
+<body>
+<div class="card bg-white rounded-2xl p-8 w-96">
+  <header class="flex items-center justify-between">
+    <p class="text-base font-semibold">You're in control of your cookies</p>
+    <svg width="24" class="h-6 w-6 cursor-pointer" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle opacity="0.5" cx="12" cy="12" r="11.5" fill="#EBEBF9" stroke="#8E94A7"></circle>
+      <path d="M12.0001 12L14.8285 9.17157M12.0001 12L9.17163 14.8284M12.0001 12L9.17163 9.17157M12.0001 12L14.8285 14.8284" stroke="#8E94A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </header>
+  <main>
+    <p class="my-8 text-sm text-gray-600 leading-6">We would like permission to share your personal data with our ad partners to allow them to show ads tailored to your interests.
+</p>
+  </main>
+  <button onclick="window.location.href = '/accept';" class="py-3.5 block w-full text-primary text-center text-sm font-medium rounded-lg mb-2 bg-blue-100 hover:bg-blue-50">YES, I accept Cookies
+
+</button>
+  <button onclick="window.location.href = '/accept';" class="py-3.5 block w-full text-center text-sm font-medium rounded-lg bg-primary text-white hover:bg-blue-500">Cookie Settings
+</button>
+</div>
+
+<style>@import url('static/css/css2.css');
+
+
+html{
+  font-family:"Poppins";
+}
+
+.bg-primary{
+  background: #0148f5;
+}
+.text-primary{
+ color:#0248F3; 
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #E6E9F0;
+  padding: 10px;
+}</style>
+<script>
+function animate(){ 
+  gsap.fromTo(".card", {x:200,opacity:.4,ease: "bounce"}, {x:0,opacity:1,ease: "bounce"});
+
+}
+
+animate()</script>
+</body>
+</html>
